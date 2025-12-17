@@ -11,11 +11,11 @@ class Car {
     private Engine engine;
 
     public Car() {
-        engine = new Engine();
+        engine = new Engine();  // Creating an instance of the Engine class
     }
 
     public int getEnginePower() {
-        return engine.power; // This line violates encapsulation
+        return engine.getPower(); // Accessing power through the public method
     }
 }
 
